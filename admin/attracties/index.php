@@ -32,11 +32,13 @@ if(!isset($_SESSION['user_id']))
 
         <?php
         require_once '../backend/conn.php';
-        $query = "SELECT * FROM rides";
+        $query = "SELECT * FROM rides ORDER BY title";  
         $statement = $conn->prepare($query);
         $statement->execute();
         $rides = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
+
+        <p>De lijst bevat <strong><?php echo count($rides); ?></strong> attracties.</p>
 
         <table>
             <tr>
