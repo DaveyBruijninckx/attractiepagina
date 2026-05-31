@@ -171,10 +171,27 @@ label{
 /* TABELLEN */
 table{
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th,
+td{
+    padding: 0.85rem 0.75rem;
+    border-bottom: 1px solid #d7e3d7;
 }
 
 th{
     text-align: left;
+    background-color: #edf7ef;
+}
+
+table tr:nth-child(even){
+    background-color: #f8fbf8;
+}
+
+table tr:hover{
+    background-color: #eaf4e9;
 }
 
 
