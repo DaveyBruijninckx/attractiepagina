@@ -263,6 +263,132 @@ th{
   clear: both;
 }
 
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Attractiekaart styling volgens schets en styleguide */
+.attractie-kaart {
+  background: #F5FCF8;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(11, 53, 29, 0.06);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #E5E5E5;
+  min-height: 270px;
+  margin-bottom: 0.5rem;
+}
+
+.attractie-kaart img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.attractie-info-links {
+  padding: 1rem 1.2rem 0.5rem 1.2rem;
+}
+
+.attractie-info-links h2 {
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 600;
+  color: #0B351D;
+  font-size: 1.2rem;
+  margin: 0.2rem 0 0.3rem 0;
+}
+
+.attractie-info-links .thema {
+  color: #849D8E;
+  font-size: 0.95rem;
+  margin-bottom: 0.1rem;
+}
+
+.attractie-info-links .lengte {
+  color: #849D8E;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.attractie-info-rechts {
+  background: #fff;
+  border-top: 1px solid #E5E5E5;
+  padding: 1rem 1.2rem 1.2rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.attractie-info-rechts .beschrijving {
+  color: #0B351D;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.fast-pass-btn {
+  background: #3ED67D;
+  color: #0B351D;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(11, 53, 29, 0.07);
+  transition: background 0.2s;
+}
+
+.fast-pass-btn:hover {
+  background: #2bbd68;
+}
+
+.attractie-kaart:has(.fast-pass-btn){
+  grid-column: span 2;
+}
+
+/* .animals{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+} */
+
+/* .animal-card,
+.animal-card-large {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    border: 2px solid black;
+    grid-template-rows: auto auto;
+} */
+
+/* .animal-card div{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .animal-card-large div{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .animal-card img{
+    width: 100%;
+    height: 100%;
+} */
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
