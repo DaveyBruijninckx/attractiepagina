@@ -32,14 +32,14 @@ if($action == 'create')
         $min_length = null;
     }
 
-    if(isset($_POST['fast_pass']))
-    {
-        $fast_pass = 1;
-    }
-    else
-    {
-        $fast_pass = 0;
-    }
+        if(isset($_POST['fast_pass']))
+        {
+            $fast_pass = 1;
+        }
+        else
+        {
+            $fast_pass = 0;
+        }
 
     $target_dir = "../../img/attracties/";
     $target_file = $_FILES['img_file']['name'];
